@@ -1,8 +1,8 @@
+from flask import current_app as app, jsonify, request
 from sqlalchemy.orm.exc import UnmappedInstanceError
 
 from . import models, db
 from .utils import instance_to_dict, string_to_date
-from flask import current_app as app, jsonify, request
 
 
 @app.get('/users')
